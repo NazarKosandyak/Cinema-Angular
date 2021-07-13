@@ -3,14 +3,65 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './components/header/header.component';
+import { SheduleComponent } from './pages/shedule/shedule.component';
+import { FilmsComponent } from './pages/films/films.component';
+import { AdminComponent } from './admin/admin.component';
+import { MainComponent } from './pages/main/main.component';
+import { AdminMainComponent } from './admin/admin-main/admin-main.component';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { ToastrModule } from 'ngx-toastr';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FilmDetailComponent } from './pages/film-detail/film-detail.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { AdminFilmComponent } from './admin/admin-film/admin-film.component';
+import { FilmInfoComponent } from './pages/film-info/film-info.component';
+import { LoginComponent } from './pages/login/login.component';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { environment } from 'src/environments/environment';
+import { OfficeTicketComponent } from './office/office-ticket/office-ticket.component';
+import { OfficeComponent } from './office/office.component';
+import { OfficeProfileComponent } from './office/office-profile/office-profile.component';
+import { OfficeSupportComponent } from './office/office-support/office-support.component';
+
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    SheduleComponent,
+    FilmsComponent,
+    AdminComponent,
+    MainComponent,
+    AdminMainComponent,
+    FilmDetailComponent,
+    FooterComponent,
+    AdminFilmComponent,
+    FilmInfoComponent,
+    LoginComponent,
+    OfficeTicketComponent,
+    OfficeComponent,
+    OfficeProfileComponent,
+    OfficeSupportComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireAuthModule,
+    AngularFirestoreModule,
+    ToastrModule.forRoot(),
+  
   ],
   providers: [],
   bootstrap: [AppComponent]

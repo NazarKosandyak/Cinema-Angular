@@ -1,0 +1,133 @@
+<div class="card">
+    <div class="upper">
+        <p>Додати фільм</p>
+    </div>
+    <div class="middle">
+        <form [formGroup]="films">
+        <p>Заголовок*</p>
+        <input formControlName = "title" name="title" type="text" placeholder="Enter title...">
+        <p>Вікові обмеження*</p>
+        <input type="number" formControlName="category" name="category" min="0" max="18" placeholder="Select age restrictions... ">
+        <p>Опис*</p>
+        <textarea class="description" formControlName="description" name="description"></textarea>
+        <p>Рік*</p>
+        <input type="number" formControlName="yearFilm" name="yearFilm" placeholder="Enter year...">
+        <p>Країна*</p>
+        <input type="text" formControlName="country" name="country" placeholder="Set country...">
+        <p>Жанр*</p>
+        <input type="text" formControlName="genre" name="genre" placeholder="Set genre...">
+        <p>Виберіть головний жанр*</p>
+        <select class="stlSelect" formControlName = "mainGenre" name="mainGenre" id="">
+          <option selected disabled [ngValue]="null">Виберіть головний жанр</option>
+          <option  [ngValue]="'Бойовик'">Бойовик</option>
+          <option  [ngValue]="'Комедія'">Комедія</option>
+          <option  [ngValue]="'Наукова фантастика'">Наукова фантастика</option>
+          <option  [ngValue]="'Трилер'">Трилер</option>
+          <option  [ngValue]="'Фентезі'">Фентезі</option>
+          <option  [ngValue]="'Пригоди'">Пригоди</option>
+          <option  [ngValue]="'Мультфільм'">Мультфільм</option>
+          <option  [ngValue]="'Кримінал'">Кримінал</option>
+        </select>
+        <p>Тривалість*</p>
+        <input type="number" formControlName="duration" name="duration" placeholder="Set duration...">
+        <p>Виберіть час:</p>
+        <select class="stlSelect" formControlName="data" name="data">
+          <option selected disabled [ngValue]="null">Виберіть дату</option>
+          <option  [ngValue]="'10:15'">10:15</option>
+          <option  [ngValue]="'11:45'">11:45</option>
+          <option  [ngValue]="'15:30'">15:30</option>
+          <option  [ngValue]="'17:35'">17:35</option>
+          <option  [ngValue]="'20:10'">20:10</option>
+          <option  [ngValue]="'22:55'">22:55</option>
+        </select>
+        <p>Постер*</p>
+        <label for="formFile" class="form-label">Виберіть файл</label>
+        <input (change)="uploadFile($event)"  class="form-control" type="file" id="formFile" >
+        <button (click)="addFilm()"  class="add">SAVE</button>
+    </form>
+    </div>
+    
+</div>
+<div class="tableData">
+  <p>Список доданих фільмів:</p>
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Title</th>
+            <th scope="col">Poster</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of dataFilms">
+            <th class="col-1">{{item.id}}</th>
+            <td class="col-7">{{item.title}}</td>
+            <td class="col-4">
+              <img class="poster" [src]="item.poster" alt="" width="100px">
+            </td>
+            <td style="min-width: 200px;">
+              <button type="button" (click)="edit(item)" class="btn btn-warning mr-2 editStl">Edit</button>
+              <button  type="button" (click)="deleteFilm(item.id)" class="btn btn-danger">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+
+<div class="modalEdit" *ngIf="editShow">
+  <div class="upper editUpper">
+      <p>Edit film</p>
+      <button (click)="closeEdit()" type="button" class="btn-close" aria-label="Close"></button>
+  </div>
+  <div class="middle">
+      <form [formGroup]='editForm'>
+      <p>Новий заголовок*</p>
+      <input formControlName = "title" name="title" type="text" placeholder="Enter title...">
+      <p>Вікові обмеження*</p>
+      <input type="number" formControlName="category" min="0" max="18" name="category" placeholder="Select age restrictions... ">
+      <p>Опис*</p>
+      <textarea class="description" formControlName="description" name="description"></textarea>
+      <p>Рік*</p>
+      <input type="number" formControlName="yearFilm" name="yearFilm" placeholder="Enter year...">
+      <p>Країна*</p>
+      <input type="text" formControlName="country" name="country" placeholder="Set country...">
+      <p>Жанр*</p>
+      <input type="text" formControlName="genre" name="genre" placeholder="Set genre...">
+      <p>Виберіть головний жанр*</p>
+      <select class="stlSelect" formControlName = "mainGenre" name="mainGenre" id="">
+        <option selected disabled [ngValue]="null">Виберіть головний жанр</option>
+        <option  [ngValue]="'Бойовик'">Бойовик</option>
+        <option  [ngValue]="'Комедія'">Комедія</option>
+        <option  [ngValue]="'Наукова фантастика'">Наукова фантастика</option>
+        <option  [ngValue]="'Трилер'">Трилер</option>
+        <option  [ngValue]="'Фентезі'">Фентезі</option>
+        <option  [ngValue]="'Пригоди'">Пригоди</option>
+        <option  [ngValue]="'Мультфільм'">Мультфільм</option>
+        <option  [ngValue]="'Кримінал'">Кримінал</option>
+      </select>
+      <p>Тривалість*</p>
+      <input type="number" formControlName="duration" name="duration" placeholder="Set duration...">
+      <p>Дата*</p>
+      <select formControlName="data" name="data" class="data">
+        <option selected  disabled="null">Виберіть дату</option>
+        <option  [ngValue]="'10:15'">10:15</option>
+        <option  [ngValue]="'11:45'">11:45</option>
+        <option  [ngValue]="'15:30'">15:30</option>
+        <option  [ngValue]="'17:35'">17:35</option>
+        <option  [ngValue]="'20:10'">20:10</option>
+        <option  [ngValue]="'22:55'">22:55</option>
+      </select>
+      <p>Новий постер*</p>
+      <label for="formFile" class="form-label">Виберіть файл</label>
+      <input (change)="newUpload($event)"  class="form-control" type="file" id="formFile" >
+      <button (click)="saveEdit()" class="add">SAVE</button>
+  </form>
+  </div>
+  
+</div>
+
+<div  class="scroll">
+  <button (click)="goUp()"><img src="../../../assets/different/up-arrow.png" alt=""></button>
+</div>

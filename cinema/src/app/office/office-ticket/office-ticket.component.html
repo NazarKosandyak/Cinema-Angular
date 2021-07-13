@@ -1,0 +1,36 @@
+
+<div class="tickets">
+    <p class="yourTick">Ваші квитки</p>
+  
+        <p *ngIf="!haveTicket" class="noTickets">{{noTickets}}</p>
+
+        <div  *ngIf="haveTicket" class="tableData">
+            <p>Список доданих фільмів:</p>
+              <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th scope="col">Фільм</th>
+                      <th scope="col">Афіша</th>
+                      <th scope="col">Час</th>
+                      <th scope="col">Редагувати</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr *ngFor="let item of films;index as i">
+                      <th class="col-4">{{item.title}} ({{item.category}}+)</th>
+                      <td class="col-4">
+                        <img class="poster" [src]="item.poster" alt="" width="100px">
+                      </td>
+                      <th class="col-3">{{item.data}}</th>
+                      <td style="min-width: 200px;">
+                        <button  type="button" (click)="deleteFilm(item,i)" class="btn btn-danger">Видалити</button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+          </div>
+    
+    
+
+</div> 
+

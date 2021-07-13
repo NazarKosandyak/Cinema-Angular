@@ -1,0 +1,11 @@
+<div class="box">
+    <div class="nav-bar">
+        <button class="navBtn" [routerLink] = "['admin-main']" routerLinkActive="active">Головна</button>
+        <button class="navBtn" [routerLink] = "['admin-film']" routerLinkActive="active">Фільми</button>
+
+    </div>
+    <div class="content">
+        <router-outlet></router-outlet>
+        
+    </div>
+</div>

@@ -1,0 +1,21 @@
+<div class="filter">
+   <button (click)="Action()">Бойовик</button>
+   <button (click)="Comedy()">Комедія</button>
+   <button (click)="SciFi()">Наукова фантастика</button>
+   <button (click)="Thriller()">Трилер</button>
+   <button (click)="Fantasy()">Фентезі</button>
+   <button (click)="Adventures()">Пригоди</button>
+   <button (click)="Cartoon()">Мультфільм</button>
+   <button (click)="Crime()">Кримінал</button>
+ </div> 
+ 
+ <div class="films">
+   <p>{{text}}</p>
+    <div class="content">
+      <div class="card" *ngFor="let item of filterArray" [routerLink]="['/film',item.id]">
+        <div class="poster"><img [src]="item.poster" alt=""></div>
+        <p class="title">{{item.title}} <span>({{item.category + "+"}})</span></p>
+      </div>
+    </div>
+ </div>
+

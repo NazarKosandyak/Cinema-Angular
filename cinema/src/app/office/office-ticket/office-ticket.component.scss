@@ -1,0 +1,32 @@
+.tickets{
+    width: 100%;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #2a2727;
+    border-radius: 10px;
+
+
+}
+.yourTick{
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 0px;
+}
+.noTickets{
+    color: #fff;
+    margin-bottom: 0px;
+}
+
+.tableData{
+    width: 100%;
+}
+thead th{
+    color: #fff;
+}
+tbody th,td{
+    color: #fff;
+}
+tbody td button{
+    margin-right: 20px;
+    background-color: red;
+}

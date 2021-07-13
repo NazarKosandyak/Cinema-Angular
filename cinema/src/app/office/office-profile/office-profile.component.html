@@ -1,0 +1,53 @@
+<div class="contact">
+    <div class="info">
+        <p>КОНТАКТНА ІНФОРМАЦІЯ</p>
+        <div class="boxes">
+            <form [formGroup]="contactForm">
+                <div class="city">
+                    <p>Ваше місто</p>
+                <select formControlName="city" name="city">
+                    <option  selected   disabled [ngValue]="null">Невизначено</option>
+                    <option [ngValue]="'Львів'">Львів</option>
+                    <option [ngValue]="'Київ'">Київ</option>
+                    <option [ngValue]="'Харків'">Харків</option>
+                    <option [ngValue]="'Одеса'">Одеса</option>
+                    <option [ngValue]="'Дніпро'">Дніпро</option>
+                </select>
+            </div>
+            <div class="phone">
+                <p>Телефон</p>
+                <input formControlName = 'phoneNumber' name="phoneNumber" type="number" min="0" class="numberPhone" placeholder="Телефон..">
+            </div>
+            <div class="email">
+                <p>E-MAIL</p>
+                <input formControlName = 'email' name="email" type="poshta" placeholder="e-mail">
+            </div>
+         
+            </form>
+        </div>
+       
+    </div>
+    <button  (click)="saveData()" class="save">Зберегти</button>
+</div>
+<div class="personal">
+    <p>ПЕРСОНАЛЬНА ІНФОРМАЦІЯ
+    </p>
+    <div class="profile">
+        <form [formGroup]="personalForm">
+            <div class="userName">
+                <p>Ім'я</p>
+                <input type="text" placeholder="Ім'я" formControlName="name" name="name">
+            </div>
+            <div class="surname">
+                <p>Прізвище</p>
+                <input type="text" placeholder="Прізвище.." formControlName="surname" name="surname">
+            </div>
+            <div class="dateOfBirth">
+                <p>Дана народження</p>
+                <input type="text" placeholder="ЧЧ.ММ.РРРР" formControlName="dateOfBirth" name="dateOfBirth">
+            </div>
+        </form>
+       
+    </div>
+    <button (click)="savePersonalInfo()" class="savePersonalInfo">Зберегти</button>
+</div>

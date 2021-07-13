@@ -1,0 +1,17 @@
+<header>
+    <div class="logo">
+        <a [routerLink]="['main']"><img src="../../../assets/multiplex.png" alt=""></a>
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a [routerLink]= "['shedule']" href="">Розклад</a></li>
+            <li><a [routerLink]= "['films']" href="">Фільми</a></li>
+            <li><a href="">Щось</a></li>
+            <li><a href="">Щось</a></li>
+        </ul>
+    </div>
+    <div class="login">
+        <a href="" [routerLink]="[loginPath]"  [textContent]="textLogin | titlecase"></a>
+        <button *ngIf="showLogOut"  (click)="logOut()"><img src="../../../assets/different/logout.png" alt=""></button>
+    </div>
+</header>

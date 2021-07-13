@@ -1,0 +1,84 @@
+<div class="infoBlock">
+    <div class="more">
+        <div class="poster" [ngStyle]="{'background-image': 'url('+ mainFilm?.poster +')'}">
+        </div>
+        <p class="years stlParagraph">Рік</p>
+        <p class="marge">{{mainFilm?.yearFilm}}</p>
+        <p class="stlParagraph">Країна</p>
+        <p class="marge">{{mainFilm?.country}}</p>
+        <p class="stlParagraph">Жанр</p>
+        <p class="marge">{{mainFilm?.genre}}</p>
+        <p class="stlParagraph">Тривалість</p>
+        <p class="marge">{{mainFilm?.duration + ' хв'}}</p>
+        <p class="stlParagraph">Вікові обмеження</p>
+        <p class="marge">{{mainFilm?.category + '+'}}</p>    
+    </div>
+    <div class="desc">
+        <p>{{mainFilm?.description}}</p>
+          <div class="calentar">
+              <div class="icon">
+                  <img src="../../../assets/different/calendar.svg" alt="">
+              </div>
+              <div class="text">{{mainFilm?.data}}</div>
+          </div>
+        <div class="buy">
+            <div class="screen">
+                <div class="scr"></div> 
+                <p>ЕКРАН</p>
+            </div>
+            <div class="zal" (click)="addPlace($event)">
+                <div class="seat" data-seatNumber="1"></div>
+                <div class="seat" data-seatNumber="2"></div>
+                <div class="seat" data-seatNumber="3"></div>
+                <div class="seat" data-seatNumber="4"></div>
+                <div class="seat" data-seatNumber="5"></div>
+                <div class="seat" data-seatNumber="6"></div>
+                <div class="seat" data-seatNumber="7"></div>
+                <div class="seat" data-seatNumber="8"></div>
+                <div class="seat" data-seatNumber="9"></div>
+                <div class="seat" data-seatNumber="10"></div>
+                <div class="seat" data-seatNumber="11"></div>
+                <div class="seat" data-seatNumber="12"></div>
+                <div class="seat" data-seatNumber="13"></div>
+                <div class="seat" data-seatNumber="14"></div>
+                <div class="seat" data-seatNumber="15"></div>
+                <div class="seat" data-seatNumber="16"></div>
+                <div class="seat" data-seatNumber="17"></div>
+                <div class="seat" data-seatNumber="18"></div>
+                <div class="seat" data-seatNumber="19"></div>
+                <div class="seat" data-seatNumber="20"></div>
+                <div class="seat" data-seatNumber="21"></div>
+                <div class="seat" data-seatNumber="22"></div>
+                <div class="seat" data-seatNumber="23"></div>
+                <div class="seat" data-seatNumber="24"></div>
+                <div class="seat" data-seatNumber="25"></div>
+                <div class="seat" data-seatNumber="26"></div>
+                <div class="seat" data-seatNumber="27"></div>
+                <div class="seat" data-seatNumber="28"></div>
+                <div class="seat" data-seatNumber="29"></div>
+                <div class="seat" data-seatNumber="30"></div>
+                <div class="seat" data-seatNumber="31"></div>
+                <div class="seat" data-seatNumber="32"></div>
+                <div class="seat" data-seatNumber="33"></div>
+                <div class="seat" data-seatNumber="34"></div>
+                <div class="seat" data-seatNumber="35"></div>
+                <div class="seat" data-seatNumber="36"></div>
+                <div class="seat" data-seatNumber="37"></div>
+                <div class="seat" data-seatNumber="40"></div>    
+                <div class="seat" data-seatNumber="41"></div>    
+                <div class="seat" data-seatNumber="42"></div>    
+                <div class="seat" data-seatNumber="43"></div>    
+                <div class="seat" data-seatNumber="44"></div>    
+                <div class="seat" data-seatNumber="45"></div>    
+                <div class="seat" data-seatNumber="46"></div>    
+                <div class="seat" data-seatNumber="47"></div>    
+                <div class="seat" data-seatNumber="48"></div>    
+                <div class="seat" data-seatNumber="49"></div>    
+                <div class="seat" data-seatNumber="50"></div>    
+            </div>
+            <button (click)="reserve()" class="reserve">Забронювати</button>
+        </div>
+    </div>
+
+   
+</div>

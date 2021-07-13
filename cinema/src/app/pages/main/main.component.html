@@ -1,0 +1,52 @@
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active stlImage" data-bs-interval="10000">
+        <img  src="../../../assets/felix-mooneeram-evlkOfkQ5rE-unsplash.jpg" class="d-block w-100 preview" alt="...">
+        <p class="greeting">Вас вітає <span class="plex">Multiplex</span></p>
+      </div>
+      <div class="carousel-item  stlImage" data-bs-interval="10000"  *ngFor="let item of mainFilms"  >
+        <img [src]="item.poster" class="d-block w-100" alt="...">
+        <div class="title">
+          <p class="titleText">{{item.title}} ({{item.category}}+)</p>
+          
+        </div>
+      </div>
+  
+    </div>
+    <button class="carousel-control-prev sizeArrow " type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon stlSlide" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next sizeArrow" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon  stlSlide" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="content-film">
+    <p class="info">Multiplex у Львові: сьогодні у кіно</p>
+    <div class="filmCard" *ngFor="let film of mainFilms">
+      <div  [ngStyle]="{'background-image':'url('+ film.poster +')'}" class="posterCard" [routerLink]="['/main',film.id]">
+        <p class="posterCategory">{{film.category + '+'}}</p>
+      </div>
+      <p class="posterTitle">{{film.title}}</p>
+    </div>
+   
+  </div> 
+  <div class="ad">
+    <div class="textAd">
+      <p>MULTIPLEX ДЛЯ ВСІХ ВАШИХ
+        ПРИСТРОЇВ</p>
+      <p>Шукайте наш додаток на своєму Smart TV, планшеті
+        і смартфоні та дивіться ТБ і кіно всюди, де вам зручно.</p>
+        <div class="devices">
+          <img src="../../../assets/different/smart.webp" alt="">
+          <img src="../../../assets/different/appstore.webp" alt="">
+          <img src="../../../assets/different/gplay.webp" alt="">
+          <img src="../../../assets/different/huawei.webp" alt="">
+        </div>
+    </div>
+    <div class="imgAd">
+      <img src="../../../assets/different/ad.jpg" alt="">
+    </div>
+  </div>

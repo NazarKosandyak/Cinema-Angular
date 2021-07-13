@@ -1,0 +1,103 @@
+.foo{
+    width: 100%;
+    background-image: url('../../../assets/klim-musalimov-rDMacl1FDjw-unsplash.jpg');
+    background-size: 100%;
+    background-position: center;
+    display: flex;
+    align-items: center
+}
+.contact{
+    width: 33%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.getContact{
+    display: block;
+    margin: 10px auto;
+    width: 160px;
+    border-radius: 30px;
+    font-weight: bold;
+    color: #ffffff;
+    outline: none;
+    line-height: 50px;
+    border: none;
+    background-color: #ff1c1c;
+    transition: .2s;
+}
+.getContact:hover{
+    background-color: #ffffff;
+    color: #ff1c1c;
+    transition: .2s;
+}
+.contact a{
+    display: block;
+    color: #fff;
+    width: 100%;
+    margin: 20px auto;
+    text-align: center;
+    text-decoration: none;
+}
+.contact p{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    margin-top: 0;
+}
+.mid{
+    width: 33%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.mid img{
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+.social{
+    width: 32%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.links{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+}
+.links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border:  2px solid white;
+    margin-right: 20px;
+    border-radius: 50%;
+    transition: .2s;
+}
+.links a:hover{
+    background-color: #ff1c1c;
+    border-color: #ff1c1c;
+    transition: .2s;
+}
+.social .links a img{
+    padding: 10px;
+    width: 50px;
+ 
+
+}
+.social p:nth-child(2){
+    width: 80%;
+    text-align: center;
+    margin-top: 30px;
+    color: #fff;
+}
+.social p{
+    color: #fff;
+    width: 80%;
+    text-align: center;
+    margin: 5px;
+}
