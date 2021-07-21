@@ -16,7 +16,9 @@ import { IFilm, IMain } from 'src/app/interfaces/main.interface';
 export class AuthService {
   currentUser$ = new Subject()
   currentFilms$ = new Subject()
+  currentOrders$ = new Subject()
   urlMain:string;
+  urlFilm:string
   constructor(
     private auth:AngularFireAuth,
     private fs:AngularFirestore,
@@ -26,6 +28,7 @@ export class AuthService {
 
   ) { 
     this.urlMain = 'http://localhost:3000/main'
+    this.urlFilm = 'http://localhost:3000/films'
   }
   singUp(name,email,password):void{
     this.auth.createUserWithEmailAndPassword(email,password)
@@ -39,14 +42,13 @@ export class AuthService {
         phoneNumber:'',
         tickets:[],
         films:[],
+        orders:[],
         city:'',
         role:'USER'
       } 
       this.fs.collection('users').doc(userCred.user.uid).set(user)
       .then(()=>{
         console.log('user created');
-        
-        
       })
       .catch(err=>console.log(err))
     })
@@ -71,9 +73,9 @@ export class AuthService {
           if(myUser.role == "USER"){
             localStorage.setItem('user',JSON.stringify(myUser))
             localStorage.setItem('films',JSON.stringify(myUser.films))
+            localStorage.setItem('orders',JSON.stringify(myUser.orders))
             this.router.navigateByUrl('/main')
             this.currentUser$.next('USER');
-          
           }
 
         }
@@ -99,7 +101,14 @@ export class AuthService {
 
 updateFilm(item,id):Observable<IMain>{
   return this.http.put<IMain>(`${this.urlMain}/${id}`,item)
-}  
+}
+ 
+deleteFilm(item,id):Observable<IFilm>{
+  return this.http.put<IFilm>(`${this.urlFilm}/${id}`,item)
+}
+deleteOrder(item,id):Observable<any>{
+  return this.http.put<any>(`${this.urlFilm}/${id}`,item)
+}
 success(massege):void{
   this.toastr.success(massege)
 }

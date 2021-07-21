@@ -1,0 +1,119 @@
+.box{
+    position: relative;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    background-color: rgb(253, 253, 253);
+    box-shadow: 0px 6px 11px 4px rgba(34, 60, 80, 0.2);
+    padding: 20px;
+}
+.upper{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15%;
+    text-align: center;
+    margin-top: 10px;
+}
+.upper p{
+    margin: 0;
+    font-size: 1.3rem;
+    background-color: #ff1c1c;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+.main{
+    display: block;
+    margin-top: 30px;
+}
+.main form p {
+    margin-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+.main form input{
+    width: 100%;
+    line-height: 30px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 10px;
+    
+}
+.main form select {
+    margin-top: 20px;
+    border-radius: 5px;
+    outline: none;
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+.save{
+    display: block;
+    width: 100%;
+    line-height: 50px;
+    margin: 0 auto;
+    background-color: #ff1c1c;
+    margin-top: 30px;
+    color: #fff;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    transition: .2s;
+}
+.save:hover{
+    transition: .2s;
+    background-color: #ff3e3e;
+}
+.editBlock{
+    position: absolute;
+    width: 500px;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%,-15%);
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    background-color: rgb(253, 253, 253);
+    box-shadow: 0px 6px 11px 4px rgba(34, 60, 80, 0.2);
+    padding: 20px;
+}
+.editStl{
+    margin-right: 20px;
+}
+.btn-close{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+.scroll{
+    position: absolute;
+    bottom: 30px;
+    right: 10px;
+    position: fixed;
+    height: 50px;
+    width: 50px; 
+    display: none;
+}
+.scroll button{
+    height: 50px;
+    width: 50px;
+    background-color: #221f1f;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+.scroll button:hover{
+    background-color: #383838;
+}
+.scroll button img{
+    height: 7   0%;
+    width: 90%;
+}

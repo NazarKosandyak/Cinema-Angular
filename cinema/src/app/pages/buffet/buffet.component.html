@@ -1,0 +1,56 @@
+<div class="box">
+    <div class="popcorn">
+        <p>Попкорн</p>
+        <div class="items">
+            <div class="card" *ngFor="let item of popcorn">
+                <div class="image">
+                    <img [src]='item.image' alt="">
+                </div>
+                <p>{{item.name}}</p>
+                <p>{{item.price}} грн.</p>
+                <div class="count">
+                    <button (click)="subtractCounter(item)" class="minus"><img src="../../../assets/different/minus.png" alt=""></button>
+                    <input [value]="item.count" type="number" value="0">
+                    <button (click)="addCounter(item)" class="plus"><img src="../../../assets/different/add.png" alt=""></button>
+                </div>
+                <button (click)="addOrder(item)" class="order">Замовити</button>
+            </div>
+        </div> 
+    </div>
+    <div class="drinks">
+        <p>Напої</p>
+        <div class="items">
+            <div class="card" *ngFor="let item of drinks">
+                <div class="image">
+                    <img [src]='item.image' alt="">
+                </div>
+                <p>{{item.name}}</p>
+                <p>{{item.price}} грн.</p>
+                <div class="count">
+                    <button (click)="subtractCounter(item)" class="minus"><img src="../../../assets/different/minus.png" alt=""></button>
+                    <input [value]="item.count" type="number" value="0">
+                    <button (click)="addCounter(item)" class="plus"><img src="../../../assets/different/add.png" alt=""></button>
+                </div>
+                <button (click)="addOrder(item)" class="order">Замовити</button>
+            </div>
+        </div> 
+    </div>
+    <div class="deserts">
+        <p>Десерти</p>
+        <div class="items">
+            <div class="card" *ngFor="let item of deserts">
+                <div class="image">
+                    <img [src]='item.image' alt="">
+                </div>
+                <p>{{item.name}}</p>
+                <p>{{item.price}} грн.</p>
+                <div class="count">
+                    <button (click)="subtractCounter(item)" class="minus"><img src="../../../assets/different/minus.png" alt=""></button>
+                    <input [value]="item.count" type="number" value="0">
+                    <button (click)="addCounter(item)" class="plus"><img src="../../../assets/different/add.png" alt=""></button>
+                </div>
+                <button (click)="addOrder(item)" class="order">Замовити</button>
+            </div>
+        </div> 
+    </div>
+</div>

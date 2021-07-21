@@ -1,0 +1,86 @@
+<div class="box">
+    <div class="upper">
+        <p>Буфет</p>
+    </div>
+    <div class="main">
+        <form action="" [formGroup]='buffetForm'>
+            <p>Назва*</p>
+            <input type="text" formControlName="name" name="name">
+            <p>Ціна*</p>
+            <input type="number" formControlName="price" name="price">
+            <p>Вага*</p>
+            <input type="number" formControlName="weight" name="weight">
+            <select formControlName="category" name="category" id="">
+                <option selected disabled [ngValue]="null" value="">Виберіть категорію</option>
+                <option  [ngValue]="'попкорн'" value="">Попкорн</option>
+                <option  [ngValue]="'десерти'" value="">Десерти</option>
+                <option  [ngValue]="'напої'" value="">Напої</option>
+            </select>
+            <label for="formFile" class="form-label">Виберіть файл</label>
+            <input (change)="upload($event)" class="form-control" type="file" id="formFile" >
+        </form>
+    </div>
+    <button (click)="addBuffet()" class="save">SAVE</button>
+</div>
+<div class="tbl">
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Назва</th>
+            <th scope="col">Ціна</th>
+            <th scope="col">Вага</th>
+            <th scope="col">Категорія</th>
+            <th scope="col">Картинка</th>
+            <th scope="col">Дії</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of dataBuffet">
+            <th class="col-1">{{item.id}}</th>
+            <td class="col-2">{{item.name}}</td>
+            <td class="col-2">{{item.price}} грн.</td>
+            <td class="col-2">{{item.weight}} гр.</td>
+            <td class="col-2">{{item.category}}</td>
+            <td class="col-3">
+              <img class="poster" [src]="item.image" alt="" width="100px">
+            </td>
+            <td style="min-width: 200px;">
+              <button type="button" (click)="edit(item)" class="btn btn-warning mr-2 editStl">Edit</button>
+              <button  type="button" (click)="deleteBuffet(item.id)" class="btn btn-danger">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+
+<div class="editBlock" *ngIf="showEdit">
+    <div class="upper">
+        <p>Буфет</p>
+        <button (click)="closeEdit()" type="button" class="btn-close" aria-label="Close"></button>
+    </div>
+    <div class="main">
+        <form action="" [formGroup]='editBuffet'>
+            <p>Назва*</p>
+            <input type="text" formControlName="name" name="name">
+            <p>Ціна*</p>
+            <input type="number" formControlName="price" name="price">
+            <p>Вага*</p>
+            <input type="number" formControlName="weight" name="weight">
+            <select formControlName="category" name="category" id="">
+                <option selected disabled [ngValue]="null" value="">Виберіть категорію</option>
+                <option  [ngValue]="'попкорн'" value="">Попкорн</option>
+                <option  [ngValue]="'десерти'" value="">Десерти</option>
+                <option  [ngValue]="'напої'" value="">Напої</option>
+            </select>
+            <label for="formFile" class="form-label">Виберіть файл</label>
+            <input (change)="upload($event)" class="form-control" type="file" id="formFile" >
+        </form>
+    </div>
+    <button (click)="saveEdit()" class="save">SAVE</button>
+</div>
+
+<div  class="scroll">
+    <button (click)="goUp()"><img src="../../../assets/different/up-arrow.png" alt=""></button>
+  </div>

@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
-import { SheduleComponent } from './pages/shedule/shedule.component';
 import { FilmsComponent } from './pages/films/films.component';
 import { AdminComponent } from './admin/admin.component';
 import { MainComponent } from './pages/main/main.component';
@@ -27,6 +26,14 @@ import { OfficeTicketComponent } from './office/office-ticket/office-ticket.comp
 import { OfficeComponent } from './office/office.component';
 import { OfficeProfileComponent } from './office/office-profile/office-profile.component';
 import { OfficeSupportComponent } from './office/office-support/office-support.component';
+import { AboutComponent } from './pages/about/about.component';
+import {NgParticlesModule} from "ng-particles";
+import { ContactComponent } from './pages/contact/contact.component';
+import { BuffetComponent } from './pages/buffet/buffet.component';
+import { AdminBuffetComponent } from './admin/admin-buffet/admin-buffet.component';
+import { OfficeOrdersComponent } from './office/office-orders/office-orders.component';
+
+
 
 
 
@@ -34,7 +41,6 @@ import { OfficeSupportComponent } from './office/office-support/office-support.c
   declarations: [
     AppComponent,
     HeaderComponent,
-    SheduleComponent,
     FilmsComponent,
     AdminComponent,
     MainComponent,
@@ -48,6 +54,11 @@ import { OfficeSupportComponent } from './office/office-support/office-support.c
     OfficeComponent,
     OfficeProfileComponent,
     OfficeSupportComponent,
+    AboutComponent,
+    ContactComponent,
+    BuffetComponent,
+    AdminBuffetComponent,
+    OfficeOrdersComponent,
 
   ],
   imports: [
@@ -61,7 +72,7 @@ import { OfficeSupportComponent } from './office/office-support/office-support.c
     AngularFireAuthModule,
     AngularFirestoreModule,
     ToastrModule.forRoot(),
-  
+    NgParticlesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

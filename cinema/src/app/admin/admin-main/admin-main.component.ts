@@ -125,9 +125,7 @@ export class AdminMainComponent implements OnInit {
       mainGenre:item.mainGenre,
       poster:`../../assets/main/${item.poster}`
     }) 
-    console.log(item.yearFilm);
-    
-    let bgc = document.body.style.background = '#8191A6'
+    document.body.style.background = '#ECE3F0'
     window.scrollTo(0,0)
     this.checkPoster = `../../assets/main/${item.poster}`
   }

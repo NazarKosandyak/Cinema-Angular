@@ -131,7 +131,6 @@ export class FilmInfoComponent implements OnInit {
       if(localStorage.getItem('films')){
       this.currentFilm = JSON.parse(localStorage.getItem('films'))
       this.films = JSON.parse(localStorage.getItem('films'))
-      console.log(this.films);
       
       }
 

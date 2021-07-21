@@ -101,9 +101,8 @@ export class OfficeTicketComponent implements OnInit {
       poster:item.poster,
       places:[],
     }
-    console.log(updateFilm);
-    
     this.authService.updateUser(updateUser)
-    this.authService.updateFilm(updateFilm,item.id)
+    this.authService.updateFilm(updateFilm,item.id).subscribe(()=>{})
+    this.authService.deleteFilm(updateFilm,item.id).subscribe(()=>{})
   }
 }

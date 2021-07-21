@@ -18,8 +18,9 @@ export class FilmDetailComponent implements OnInit {
   currentFilms;
   seatReserve=[]
   reservedPlaces=[] ;
-  reservePlace;
+  getAllPlaces=[];
   films=[]
+
   constructor(
     private activatedRoute:ActivatedRoute,
     private adminService:AdminMainService,
@@ -36,12 +37,13 @@ export class FilmDetailComponent implements OnInit {
   }
 
   get():void{
-    let getSeats= document.querySelectorAll('.seat')
+    let getSeats = document.querySelectorAll('.seat')
     this.id = +this.activatedRoute.snapshot.paramMap.get('id')
     this.adminService.getOne(this.id).subscribe((data)=>{
     this.mainFilm = data
-    this.reservedPlaces = this.mainFilm.places
-    console.log(this.mainFilm);
+    this.reservedPlaces = this.mainFilm.places  
+    console.log(this.getAllPlaces);
+    
     
     })
     
@@ -74,10 +76,7 @@ export class FilmDetailComponent implements OnInit {
         else{
           event.target.classList.add('block')
           this.places.push(event.target.dataset.seatnumber)
-          console.log(this.places);
-              
           this.info(`Ви вибрали місце №${event.target.dataset.seatnumber}`)
-          this.addTickets()
         }
        
       }
@@ -103,12 +102,15 @@ export class FilmDetailComponent implements OnInit {
     }
     
     this.films.push(this.mainFilm)
-    this.places =[]
+    // this.places = []
     this.authService.updateUser(reserveTickets)
+    this.addTickets()
     localStorage.setItem('user',JSON.stringify(reserveTickets))
     localStorage.setItem('films',JSON.stringify(this.films))
     this.authService.currentFilms$.next('films')
     this.authService.currentUser$.next('tickets')
+    this.getAllPlaces =  this.reservedPlaces.concat(this.places)
+
   }
   info(messege):void{
     this.toastr.info(messege)
@@ -138,7 +140,6 @@ export class FilmDetailComponent implements OnInit {
       if(localStorage.getItem('films')){
       this.currentFilms = JSON.parse(localStorage.getItem('films'))
       this.films = JSON.parse(localStorage.getItem('films'))
-      console.log(this.films);
       
       }
 

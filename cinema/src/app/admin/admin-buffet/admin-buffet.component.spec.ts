@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SheduleComponent } from './shedule.component';
+import { AdminBuffetComponent } from './admin-buffet.component';
 
-describe('SheduleComponent', () => {
-  let component: SheduleComponent;
-  let fixture: ComponentFixture<SheduleComponent>;
+describe('AdminBuffetComponent', () => {
+  let component: AdminBuffetComponent;
+  let fixture: ComponentFixture<AdminBuffetComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SheduleComponent ]
+      declarations: [ AdminBuffetComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SheduleComponent);
+    fixture = TestBed.createComponent(AdminBuffetComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

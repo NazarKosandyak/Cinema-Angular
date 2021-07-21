@@ -1,10 +1,10 @@
 <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
-      <div class="carousel-item active stlImage" data-bs-interval="10000">
+      <div class="carousel-item active stlImage" data-bs-interval="5000">
         <img  src="../../../assets/felix-mooneeram-evlkOfkQ5rE-unsplash.jpg" class="d-block w-100 preview" alt="...">
         <p class="greeting">Вас вітає <span class="plex">Multiplex</span></p>
       </div>
-      <div class="carousel-item  stlImage" data-bs-interval="10000"  *ngFor="let item of mainFilms"  >
+      <div class="carousel-item  stlImage" data-bs-interval="6000"  *ngFor="let item of mainFilms"  >
         <img [src]="item.poster" class="d-block w-100" alt="...">
         <div class="title">
           <p class="titleText">{{item.title}} ({{item.category}}+)</p>

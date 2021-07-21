@@ -123,6 +123,7 @@ export class AdminFilmComponent implements OnInit {
       data:film.data,
       poster:`../../../assets/posters/${film.poster}`
     })
+    document.body.style.background = '#ECE3F0'
     window.scrollTo(0,0)
     this.checkPoster = `../../assets/posters/${film.poster}`
 
