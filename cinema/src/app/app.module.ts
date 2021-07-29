@@ -25,16 +25,12 @@ import { environment } from 'src/environments/environment';
 import { OfficeTicketComponent } from './office/office-ticket/office-ticket.component';
 import { OfficeComponent } from './office/office.component';
 import { OfficeProfileComponent } from './office/office-profile/office-profile.component';
-import { OfficeSupportComponent } from './office/office-support/office-support.component';
 import { AboutComponent } from './pages/about/about.component';
 import {NgParticlesModule} from "ng-particles";
 import { ContactComponent } from './pages/contact/contact.component';
 import { BuffetComponent } from './pages/buffet/buffet.component';
 import { AdminBuffetComponent } from './admin/admin-buffet/admin-buffet.component';
 import { OfficeOrdersComponent } from './office/office-orders/office-orders.component';
-
-
-
 
 
 @NgModule({
@@ -53,7 +49,6 @@ import { OfficeOrdersComponent } from './office/office-orders/office-orders.comp
     OfficeTicketComponent,
     OfficeComponent,
     OfficeProfileComponent,
-    OfficeSupportComponent,
     AboutComponent,
     ContactComponent,
     BuffetComponent,

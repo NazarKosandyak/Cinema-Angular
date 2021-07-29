@@ -1,0 +1,430 @@
+@media (min-width: 1200px) {
+  .filter {
+    width: 100%;
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: #221f1f;
+  }
+  .filter button {
+    padding: 0 20px 0 20px;
+    background-color: #ff1c1c;
+    border-radius: 20px;
+    border: none;
+    height: 35px;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .films {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: #221f1f;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .films p {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 1.4rem;
+  }
+  .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 20px;
+    width: 85%;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: #2a2727;
+  }
+  .card {
+    margin: 20px auto;
+    background: transparent;
+    width: 250px;
+    height: 350px;
+    cursor: pointer;
+    border: none;
+  }
+  .poster {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+  }
+  .poster img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  .card .title {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .filter {
+    width: 100%;
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: #221f1f;
+  }
+  .filter button {
+    padding: 0 10px 0 10px;
+    background-color: #ff1c1c;
+    border-radius: 20px;
+    border: none;
+    height: 25px;
+    color: #fff;
+    font-size: .8rem;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .films {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: #221f1f;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .films p {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 1.4rem;
+  }
+  .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 20px;
+    width: 85%;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: #2a2727;
+  }
+  .card {
+    margin: 20px auto;
+    background: transparent;
+    width: 200px;
+    height: 250px;
+    cursor: pointer;
+    border: none;
+  }
+  .poster {
+    margin: 0 auto;
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+  }
+  .poster img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  .card .title {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .filter {
+    width: 100%;
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: #221f1f;
+  }
+  .filter button {
+    padding: 0 10px 0 10px;
+    background-color: #ff1c1c;
+    border-radius: 20px;
+    border: none;
+    height: 25px;
+    color: #fff;
+    font-size: .8rem;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .films {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: #221f1f;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .films p {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 1.4rem;
+  }
+  .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 20px;
+    width: 85%;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: #2a2727;
+  }
+  .card {
+    margin: 20px auto;
+    background: transparent;
+    width: 200px;
+    height: 250px;
+    cursor: pointer;
+    border: none;
+  }
+  .poster {
+    margin: 0 auto;
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+  }
+  .poster img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  .card .title {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .filter {
+    width: 100%;
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: #221f1f;
+  }
+  .filter button {
+    padding: 0 10px 0 10px;
+    background-color: #ff1c1c;
+    border-radius: 10px;
+    border: none;
+    height: 25px;
+    color: #fff;
+    font-size: .5rem;
+    margin-right: 5px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .films {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: #221f1f;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .films p {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 1.4rem;
+  }
+  .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 20px;
+    width: 85%;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: #2a2727;
+  }
+  .card {
+    margin: 20px auto;
+    background: transparent;
+    width: 200px;
+    height: 250px;
+    cursor: pointer;
+    border: none;
+  }
+  .poster {
+    margin: 0 auto;
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+  }
+  .poster img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  .card .title {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .filter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 10px 40px;
+    width: 100%;
+    min-height: 120px;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: #221f1f;
+  }
+  .filter button {
+    padding: 0 10px 0 10px;
+    background-color: #ff1c1c;
+    border-radius: 10px;
+    border: none;
+    height: 25px;
+    color: #fff;
+    font-size: .5rem;
+    margin-right: 5px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .films {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: #221f1f;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .films p {
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 1.4rem;
+  }
+  .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 20px;
+    width: 85%;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: #2a2727;
+  }
+  .card {
+    margin: 20px auto;
+    background: transparent;
+    width: 170px;
+    height: 220px;
+    cursor: pointer;
+    border: none;
+  }
+  .poster {
+    margin: 0 auto;
+    width: 80%;
+    height: 80%;
+    border-radius: 10px;
+  }
+  .poster img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  .card .title {
+    font-size: 1rem;
+  }
+}
+/*# sourceMappingURL=films.component.css.map */

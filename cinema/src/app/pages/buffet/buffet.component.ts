@@ -9,113 +9,111 @@ import { AuthService } from 'src/app/services/auth/auth.service';
   styleUrls: ['./buffet.component.scss']
 })
 export class BuffetComponent implements OnInit {
-  allGoods:any[]
-  popcorn:any[]=[]
-  drinks:any[]=[]
-  deserts:any[]=[]
-  orders:any[]=[]
+  allGoods: any[]
+  popcorn: any[] = []
+  drinks: any[] = []
+  deserts: any[] = []
+  orders: any[] = []
   currentUser;
 
   constructor(
-    private buffetService:AdminBuffetService,
-    private toastr:ToastrService,
-    private authService:AuthService
+    private buffetService: AdminBuffetService,
+    private toastr: ToastrService,
+    private authService: AuthService
   ) { }
 
-  ngOnInit(): void {    
+  ngOnInit(): void {
     this.getAll()
     this.loadUser()
     this.checkUser()
     this.loadOrders()
     this.checkOrders()
   }
-  getAll():void{
-    this.buffetService.getAll().subscribe((data)=>{
+  getAll(): void {
+    this.buffetService.getAll().subscribe((data) => {
       this.allGoods = data
-      this.popcorn = this.allGoods.filter(value=>value.category == "попкорн")   
-      this.drinks = this.allGoods.filter(value=>value.category == "напої")   
-      this.deserts = this.allGoods.filter(value=>value.category == "десерти")     
+      this.popcorn = this.allGoods.filter(value => value.category == "попкорн")
+      this.drinks = this.allGoods.filter(value => value.category == "напої")
+      this.deserts = this.allGoods.filter(value => value.category == "десерти")
     })
   }
-  
-  addOrder(item):void{
-    if(this.currentUser == undefined){
+
+  addOrder(item): void {
+    if (this.currentUser == undefined) {
       this.warning('Увійдіть в акаунт!')
     }
-    if(item.count == 0){
+    if (item.count == 0) {
       this.warning('Ви нічого не вибрали')
     }
-    if(item.count !=0){
+    if (item.count != 0) {
       const updateUser = {
-        name:this.currentUser.name,
-        surname:this.currentUser.surname,
-        dateOfBirth:this.currentUser.dateOfBirth,
-        email:this.currentUser.email,
-        uid:this.currentUser.uid,
-        phoneNumber:this.currentUser.phoneNumber,
-        tickets:this.currentUser.tickets,
-        city:this.currentUser.city,
-        films:this.currentUser.films,
-        orders:this.orders,
-        role:'USER'
+        name: this.currentUser.name,
+        surname: this.currentUser.surname,
+        dateOfBirth: this.currentUser.dateOfBirth,
+        email: this.currentUser.email,
+        uid: this.currentUser.uid,
+        phoneNumber: this.currentUser.phoneNumber,
+        tickets: this.currentUser.tickets,
+        city: this.currentUser.city,
+        films: this.currentUser.films,
+        orders: this.orders,
+        role: 'USER'
       }
       this.orders.push(item)
       this.authService.updateUser(updateUser)
-      localStorage.setItem('user',JSON.stringify(updateUser))
-      localStorage.setItem('orders',JSON.stringify(this.orders))
+      localStorage.setItem('user', JSON.stringify(updateUser))
+      localStorage.setItem('orders', JSON.stringify(this.orders))
       this.authService.currentOrders$.next('new order')
       item.count = 0
     }
-    
+
   }
-  subtractCounter(item):void{
-    if(item.count > 0){
+  subtractCounter(item): void {
+    if (item.count > 0) {
       item.count--
     }
   }
-  addCounter(item):void{
-      if(item.count  <10){
-        item.count++
-      }
-      else{
-        this.warning('Максимальна кількість однієї позиції 10 од.')
-      }
+  addCounter(item): void {
+    if (item.count < 10) {
+      item.count++
+    }
+    else {
+      this.warning('Максимальна кількість однієї позиції 10 од.')
+    }
   }
 
- 
-  loadUser():void{
-    if(localStorage.length > 0) {
-      if(localStorage.getItem('user')){
-      this.currentUser = JSON.parse(localStorage.getItem('user'))
-      console.log(this.currentUser);
-      
-      }
-      else if(localStorage.getItem('adminCred')){
 
+  loadUser(): void {
+    if (localStorage.length > 0) {
+      if (localStorage.getItem('user')) {
+        this.currentUser = JSON.parse(localStorage.getItem('user'))
       }
-    } 
-  }
-  checkUser():void{
-    this.authService.currentUser$.subscribe(()=>{
-      this.loadUser()
-    })
-  }
-  loadOrders():void{
-    if(localStorage.length > 0){
-      if(localStorage.getItem('orders')){
-        this.orders =  JSON.parse(localStorage.getItem('orders'))
+      else if (localStorage.getItem('adminCred')) {
+
       }
     }
   }
-  checkOrders():void{
-    this.authService.currentOrders$.subscribe(()=>{
+  checkUser(): void {
+    this.authService.currentUser$.subscribe(() => {
+      this.loadUser()
+    })
+  }
+  loadOrders(): void {
+    if (localStorage.length > 0) {
+      if (localStorage.getItem('orders')) {
+        this.orders = JSON.parse(localStorage.getItem('orders'))
+      }
+    }
+  }
+  checkOrders(): void {
+    this.authService.currentOrders$.subscribe(() => {
       this.loadOrders()
     })
   }
-  success(messege):void{
+  success(messege): void {
     this.toastr.success(messege)
   }
-  warning(messege):void{
+  warning(messege): void {
     this.toastr.warning(messege)
   }
 

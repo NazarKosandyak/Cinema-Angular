@@ -7,7 +7,6 @@ import { AdminComponent } from './admin/admin.component';
 import { AdminGuard } from './guards/admin.guard';
 import { OfficeOrdersComponent } from './office/office-orders/office-orders.component';
 import { OfficeProfileComponent } from './office/office-profile/office-profile.component';
-import { OfficeSupportComponent } from './office/office-support/office-support.component';
 import { OfficeTicketComponent } from './office/office-ticket/office-ticket.component';
 import { OfficeComponent } from './office/office.component';
 import { AboutComponent } from './pages/about/about.component';
@@ -40,7 +39,6 @@ const routes: Routes = [
     {path:'',pathMatch:"full",redirectTo:"office"},
     {path:'office-ticket',component:OfficeTicketComponent},
     {path:'office-profile',component:OfficeProfileComponent},
-    {path:'office-support',component:OfficeSupportComponent},
     {path:'office-orders',component:OfficeOrdersComponent},
   ]}
 ];

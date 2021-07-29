@@ -1,0 +1,762 @@
+@media (min-width: 1200px) {
+  .infoBlock {
+    width: 100%;
+    min-height: 600px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-image: url("../../../assets/klim-musalimov-rDMacl1FDjw-unsplash.jpg");
+    background-position: center center;
+    background-size: 100%;
+  }
+  .more {
+    width: 20%;
+    margin: 20px auto;
+  }
+  .poster {
+    display: block;
+    width: 200px;
+    height: 350px;
+    border-radius: 5px;
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .year {
+    display: block;
+    margin-top: 20px;
+  }
+  .stlParagraph {
+    font-weight: 100;
+    margin-bottom: 0;
+    color: #ff5757;
+  }
+  .marge {
+    color: #fff;
+  }
+  .desc {
+    width: 70%;
+    margin-top: 20px;
+    color: #fff;
+  }
+  .buy {
+    width: 60%;
+    margin: 40px auto;
+  }
+  .scr {
+    display: block;
+    margin-top: 50px;
+    background-image: url("../../../assets/screen.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 50px;
+    width: 100%;
+  }
+  .screen p {
+    text-align: center;
+  }
+  .zal {
+    width: 300px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .seat {
+    margin: 0 auto;
+    width: 20px;
+    height: 30px;
+    margin-right: 5px;
+    margin-top: 5px;
+    background-color: #3a3a3a;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .seat:hover {
+    background-color: #ff1c1c;
+  }
+  .calendar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: red;
+  }
+  .icon {
+    width: 35%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-right: 1px solid #fff;
+  }
+  .icon img {
+    width: 60%;
+    height: 60%;
+  }
+  .text {
+    width: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .reserve {
+    display: block;
+    margin: 20px auto;
+    width: 150px;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    color: #fff;
+    -webkit-transition: .2s;
+    transition: .2s;
+  }
+  .reserve:hover {
+    -webkit-transition: .2s;
+    transition: .2s;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  .reserve:active {
+    background-color: #b40000;
+  }
+  .block {
+    background-color: #da3939;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .infoBlock {
+    width: 100%;
+    min-height: 600px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-image: url("../../../assets/klim-musalimov-rDMacl1FDjw-unsplash.jpg");
+    background-position: center center;
+    background-size: 100%;
+  }
+  .more {
+    width: 20%;
+    margin: 20px auto;
+  }
+  .poster {
+    display: block;
+    width: 200px;
+    height: 350px;
+    border-radius: 5px;
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .year {
+    display: block;
+    margin-top: 20px;
+  }
+  .stlParagraph {
+    font-weight: 100;
+    margin-bottom: 0;
+    color: #ff5757;
+  }
+  .marge {
+    color: #fff;
+  }
+  .desc {
+    width: 70%;
+    margin-right: 20px;
+    margin-top: 20px;
+    color: #fff;
+  }
+  .buy {
+    width: 60%;
+    margin: 40px auto;
+  }
+  .scr {
+    display: block;
+    margin-top: 50px;
+    background-image: url("../../../assets/screen.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 50px;
+    width: 100%;
+  }
+  .screen p {
+    text-align: center;
+  }
+  .zal {
+    width: 300px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .seat {
+    margin: 0 auto;
+    width: 20px;
+    height: 30px;
+    margin-right: 5px;
+    margin-top: 5px;
+    background-color: #3a3a3a;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .seat:hover {
+    background-color: #ff1c1c;
+  }
+  .calendar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: red;
+  }
+  .icon {
+    width: 35%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-right: 1px solid #fff;
+  }
+  .icon img {
+    width: 60%;
+    height: 60%;
+  }
+  .text {
+    width: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .reserve {
+    display: block;
+    margin: 20px auto;
+    width: 150px;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    color: #fff;
+    -webkit-transition: .2s;
+    transition: .2s;
+  }
+  .reserve:hover {
+    -webkit-transition: .2s;
+    transition: .2s;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  .reserve:active {
+    background-color: #b40000;
+  }
+  .block {
+    background-color: #da3939;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .infoBlock {
+    width: 100%;
+    min-height: 600px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-image: url("../../../assets/klim-musalimov-rDMacl1FDjw-unsplash.jpg");
+    background-position: center center;
+    background-size: 100%;
+  }
+  .more {
+    width: 20%;
+    margin: 20px auto;
+  }
+  .poster {
+    display: block;
+    width: 170px;
+    height: 250px;
+    border-radius: 5px;
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .year {
+    display: block;
+    margin-top: 20px;
+  }
+  .stlParagraph {
+    font-weight: 100;
+    margin-bottom: 0;
+    font-size: .8rem;
+    color: #ff5757;
+  }
+  .marge {
+    color: #fff;
+    font-size: .8rem;
+  }
+  .desc {
+    width: 60%;
+    margin-right: 20px;
+    margin-top: 20px;
+    font-size: .9rem;
+    color: #fff;
+  }
+  .buy {
+    width: 60%;
+    margin: 40px auto;
+  }
+  .scr {
+    display: block;
+    margin-top: 50px;
+    background-image: url("../../../assets/screen.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 50px;
+    width: 100%;
+  }
+  .screen p {
+    text-align: center;
+  }
+  .zal {
+    width: 300px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .seat {
+    margin: 0 auto;
+    width: 20px;
+    height: 30px;
+    margin-right: 5px;
+    margin-top: 5px;
+    background-color: #3a3a3a;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .seat:hover {
+    background-color: #ff1c1c;
+  }
+  .calendar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: red;
+  }
+  .icon {
+    width: 35%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-right: 1px solid #fff;
+  }
+  .icon img {
+    width: 60%;
+    height: 60%;
+  }
+  .text {
+    width: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .reserve {
+    display: block;
+    margin: 20px auto;
+    width: 150px;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    color: #fff;
+    -webkit-transition: .2s;
+    transition: .2s;
+  }
+  .reserve:hover {
+    -webkit-transition: .2s;
+    transition: .2s;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  .reserve:active {
+    background-color: #b40000;
+  }
+  .block {
+    background-color: #da3939;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .infoBlock {
+    width: 100%;
+    min-height: 600px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-image: url("../../../assets/klim-musalimov-rDMacl1FDjw-unsplash.jpg");
+    background-position: center center;
+    background-size: 100%;
+  }
+  .more {
+    width: 20%;
+    margin: 20px auto;
+  }
+  .poster {
+    display: block;
+    width: 130px;
+    height: 200px;
+    border-radius: 5px;
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .year {
+    display: block;
+    margin-top: 20px;
+  }
+  .stlParagraph {
+    font-weight: 100;
+    margin-bottom: 0;
+    font-size: .8rem;
+    color: #ff5757;
+  }
+  .marge {
+    color: #fff;
+    font-size: .8rem;
+  }
+  .desc {
+    width: 60%;
+    margin-right: 20px;
+    margin-top: 20px;
+    font-size: .8rem;
+    color: #fff;
+  }
+  .buy {
+    width: 60%;
+    margin: 40px auto;
+  }
+  .scr {
+    display: block;
+    margin-top: 50px;
+    background-image: url("../../../assets/screen.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 50px;
+    width: 100%;
+  }
+  .screen p {
+    text-align: center;
+  }
+  .zal {
+    width: 200px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .seat {
+    margin: 0 auto;
+    width: 20px;
+    height: 30px;
+    margin-right: 5px;
+    margin-top: 5px;
+    background-color: #3a3a3a;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .seat:hover {
+    background-color: #ff1c1c;
+  }
+  .calendar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 150px;
+    height: 50px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    background-color: red;
+  }
+  .icon {
+    width: 35%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-right: 1px solid #fff;
+  }
+  .icon img {
+    width: 60%;
+    height: 60%;
+  }
+  .text {
+    width: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .reserve {
+    display: block;
+    margin: 20px auto;
+    width: 150px;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    color: #fff;
+    -webkit-transition: .2s;
+    transition: .2s;
+  }
+  .reserve:hover {
+    -webkit-transition: .2s;
+    transition: .2s;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  .reserve:active {
+    background-color: #b40000;
+  }
+  .block {
+    background-color: #da3939;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .infoBlock {
+    width: 100%;
+    min-height: 600px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background-image: url("../../../assets/klim-musalimov-rDMacl1FDjw-unsplash.jpg");
+    background-position: center center;
+    background-size: 100%;
+  }
+  .more {
+    width: 50%;
+    padding-top: 20px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .poster {
+    display: block;
+    margin: 0 auto;
+    width: 130px;
+    height: 200px;
+    border-radius: 5px;
+    background-image: url();
+    background-position: 70% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .year {
+    display: block;
+    margin-top: 20px;
+  }
+  .stlParagraph {
+    font-weight: 100;
+    margin-bottom: 0;
+    font-size: .8rem;
+    color: #ff5757;
+  }
+  .marge {
+    color: #fff;
+    font-size: .8rem;
+  }
+  .desc {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    font-size: .8rem;
+    color: #fff;
+  }
+  .buy {
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+  .scr {
+    display: block;
+    margin-top: 50px;
+    background-image: url("../../../assets/screen.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 50px;
+    width: 100%;
+  }
+  .screen p {
+    text-align: center;
+  }
+  .zal {
+    width: 200px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .seat {
+    margin: 0 auto;
+    width: 20px;
+    height: 30px;
+    margin-right: 5px;
+    margin-top: 5px;
+    background-color: #3a3a3a;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .seat:hover {
+    background-color: #ff1c1c;
+  }
+  .calendar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    width: 150px;
+    height: 50px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    background-color: red;
+  }
+  .icon {
+    width: 35%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-right: 1px solid #fff;
+  }
+  .icon img {
+    width: 60%;
+    height: 60%;
+  }
+  .text {
+    width: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .reserve {
+    display: block;
+    margin: 20px auto;
+    width: 150px;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    color: #fff;
+    -webkit-transition: .2s;
+    transition: .2s;
+  }
+  .reserve:hover {
+    -webkit-transition: .2s;
+    transition: .2s;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  .reserve:active {
+    background-color: #b40000;
+  }
+  .block {
+    background-color: #da3939;
+  }
+}
+/*# sourceMappingURL=film-detail.component.css.map */

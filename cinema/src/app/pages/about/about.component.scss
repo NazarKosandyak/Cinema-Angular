@@ -1,50 +1,61 @@
-.content{
+@media (min-width: 1200px) {
+  .content {
     display: flex;
     height: 600px;
-}
-.particle{
+  }
+
+  .particle {
     width: 50%;
     height: 100%;
     position: relative;
-   
-}
-.about{
+
+  }
+
+  .about {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 50%;
     height: 100%;
     overflow-y: auto;
-    background-color: rgba(34,31,31,.95);
-}
-.text{
+    background-color: rgba(34, 31, 31, .95);
+  }
+
+  .text {
     width: 90%;
     height: 90%;
 
-}
-.text p:nth-child(1) {
+  }
+
+  .text p:nth-child(1) {
     color: #fff;
     font-size: 1.6rem;
     font-family: 'Open Sans', sans-serif;
-}
-.text p:nth-child(2),.text p:nth-child(3),.text p:nth-child(4),.text p:nth-child(5){
+  }
+
+  .text p:nth-child(2),
+  .text p:nth-child(3),
+  .text p:nth-child(4),
+  .text p:nth-child(5) {
     color: #fff;
     font-size: 1.1rem;
     font-family: 'Open Sans', sans-serif;
-}
-.text p:nth-child(6){
+  }
+
+  .text p:nth-child(6) {
     color: #fff;
     font-size: 1.6rem;
     font-family: 'Open Sans', sans-serif;
-}
-ul li {
+  }
+
+  ul li {
     color: #fff;
     font-size: 1rem;
     line-height: 25px;
     font-family: 'Open Sans', sans-serif;
-}
+  }
 
-.logo{
+  .logo {
     background-image: url('../../../assets/logo_about.svg');
     height: 200px;
     background-size: 100%;
@@ -53,5 +64,278 @@ ul li {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .content {
+    display: flex;
+    height: 600px;
+  }
+
+  .particle {
+    width: 50%;
+    height: 100%;
+    position: relative;
+
+  }
+
+  .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    overflow-y: auto;
+    background-color: rgba(34, 31, 31, .95);
+  }
+
+  .text {
+    width: 90%;
+    height: 90%;
+
+  }
+
+  .text p:nth-child(1) {
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .text p:nth-child(2),
+  .text p:nth-child(3),
+  .text p:nth-child(4),
+  .text p:nth-child(5) {
+    color: #fff;
+    font-size: .8rem;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .text p:nth-child(6) {
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  ul li {
+    color: #fff;
+    font-size: .8rem;
+    line-height: 25px;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .logo {
+    background-image: url('../../../assets/logo_about.svg');
+    height: 200px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .content {
+    display: flex;
+    height: 500px;
+  }
+
+  .particle {
+    width: 50%;
+    height: 100%;
+    position: relative;
+
+  }
+
+  .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    overflow-y: auto;
+    background-color: rgba(34, 31, 31, .95);
+  }
+
+  .text {
+    width: 90%;
+    height: 90%;
+
+  }
+
+  .text p:nth-child(1) {
+    color: #fff;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .text p:nth-child(2),
+  .text p:nth-child(3),
+  .text p:nth-child(4),
+  .text p:nth-child(5) {
+    color: #fff;
+    font-size: .6rem;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .text p:nth-child(6) {
+    color: #fff;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  ul li {
+    color: #fff;
+    font-size: .6rem;
+    line-height: 25px;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .logo {
+    background-image: url('../../../assets/logo_about.svg');
+    height: 120px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .particle {
+    width: 100%;
+    height: 400px;
+    position: relative;
+
+  }
+
+  .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    background-color: rgba(34, 31, 31, .95);
+  }
+
+  .text {
+    margin-top: 30px;
+    width: 90%;
+    height: 90%;
+
+  }
+
+  .text p:nth-child(1) {
+    color: #fff;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .text p:nth-child(2),
+  .text p:nth-child(3),
+  .text p:nth-child(4),
+  .text p:nth-child(5) {
+    color: #fff;
+    font-size: .6rem;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .text p:nth-child(6) {
+    color: #fff;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  ul li {
+    color: #fff;
+    font-size: .6rem;
+    line-height: 25px;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .logo {
+    background-image: url('../../../assets/logo_about.svg');
+    height: 100px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .particle {
+    width: 100%;
+    height: 300px;
+    position: relative;
+
+  }
+
+  .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    background-color: rgba(34, 31, 31, .95);
+  }
+
+  .text {
+    margin-top: 30px;
+    width: 90%;
+    height: 90%;
+
+  }
+
+  .text p:nth-child(1) {
+    color: #fff;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .text p:nth-child(2),
+  .text p:nth-child(3),
+  .text p:nth-child(4),
+  .text p:nth-child(5) {
+    color: #fff;
+    font-size: .6rem;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .text p:nth-child(6) {
+    color: #fff;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  ul li {
+    color: #fff;
+    font-size: .6rem;
+    line-height: 25px;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .logo {
+    background-image: url('../../../assets/logo_about.svg');
+    height: 100px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }

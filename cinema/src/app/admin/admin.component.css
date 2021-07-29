@@ -1,0 +1,36 @@
+.box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-bar {
+  display: block;
+  width: 15%;
+  background-color: transparent;
+  padding: 15px;
+}
+
+.navBtn {
+  display: block;
+  width: 130px;
+  margin: 10px auto;
+  line-height: 40px;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #ff1c1c;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.content {
+  width: 80%;
+  margin-top: 20px;
+}
+
+.active {
+  background-color: #161616;
+}
+/*# sourceMappingURL=admin.component.css.map */

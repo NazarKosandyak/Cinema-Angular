@@ -1,4 +1,5 @@
-.infoBlock{
+@media (min-width: 1200px) {
+  .infoBlock {
     width: 100%;
     min-height: 600px;
     display: flex;
@@ -6,13 +7,15 @@
     background-image: url('../../../assets/klim-musalimov-rDMacl1FDjw-unsplash.jpg');
     background-position: center center;
     background-size: 100%;
-}
-.more{
+  }
+
+  .more {
     width: 20%;
     margin: 20px auto;
 
-}
-.poster{
+  }
+
+  .poster {
     display: block;
     width: 200px;
     height: 350px;
@@ -22,32 +25,37 @@
     background-size: cover;
     background-repeat: no-repeat;
 
-}
-.year{
+  }
+
+  .year {
     display: block;
     margin-top: 20px;
 
-}
-.stlParagraph{
+  }
+
+  .stlParagraph {
     font-weight: 100;
     margin-bottom: 0;
     color: #ff5757;
-}
-.marge{
-    color: #fff;
-}
+  }
 
-.desc{
+  .marge {
+    color: #fff;
+  }
+
+  .desc {
     width: 70%;
     margin-top: 20px;
     color: #fff;
-}
-.buy{
+  }
+
+  .buy {
     width: 60%;
     margin: 40px auto;
-}
-.scr{
-    display: block  ;
+  }
+
+  .scr {
+    display: block;
     margin-top: 50px;
     background-image: url('../../../assets/screen.png');
     background-size: cover;
@@ -55,19 +63,21 @@
     background-position: center top;
     height: 50px;
     width: 100%;
-}
-.screen p {
-    text-align: center;
-}
+  }
 
-.zal{
-    width: 50%;
+  .screen p {
+    text-align: center;
+  }
+
+  .zal {
+    width: 300px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
 
-}
-.seat{
+  }
+
+  .seat {
     margin: 0 auto;
     width: 20px;
     height: 30px;
@@ -76,36 +86,42 @@
     background-color: #3a3a3a;
     border-radius: 5px;
     cursor: pointer;
-}
-.seat:hover{
+  }
+
+  .seat:hover {
     background-color: rgb(255, 28, 28);
-}
-.calentar{
+  }
+
+  .calendar {
     display: flex;
     width: 150px;
     height: 50px;
     border-radius: 5px;
-    background-color:red;
-}
-.icon{
+    background-color: red;
+  }
+
+  .icon {
     width: 35%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     border-right: 1px solid #fff;
-}   
-.icon img{
+  }
+
+  .icon img {
     width: 60%;
     height: 60%;
-}
-.text{
+  }
+
+  .text {
     width: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.reserve{
+  }
+
+  .reserve {
     display: block;
     margin: 20px auto;
     width: 150px;
@@ -115,14 +131,632 @@
     height: 40px;
     color: #fff;
     transition: .2s;
-}
-.reserve:hover{
+  }
+
+  .reserve:hover {
     transition: .2s;
     transform: scale(1.1);
-}
-.reserve:active{
+  }
+
+  .reserve:active {
     background-color: rgb(180, 0, 0);
-}
-.block{
+  }
+
+  .block {
     background-color: #da3939;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .infoBlock {
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    justify-content: space-between;
+    background-image: url('../../../assets/klim-musalimov-rDMacl1FDjw-unsplash.jpg');
+    background-position: center center;
+    background-size: 100%;
+  }
+
+  .more {
+    width: 20%;
+    margin: 20px auto;
+
+  }
+
+  .poster {
+    display: block;
+    width: 200px;
+    height: 350px;
+    border-radius: 5px;
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+
+  .year {
+    display: block;
+    margin-top: 20px;
+
+  }
+
+  .stlParagraph {
+    font-weight: 100;
+    margin-bottom: 0;
+    color: #ff5757;
+  }
+
+  .marge {
+    color: #fff;
+  }
+
+  .desc {
+    width: 70%;
+    margin-right: 20px;
+    margin-top: 20px;
+    color: #fff;
+  }
+
+  .buy {
+    width: 60%;
+    margin: 40px auto;
+  }
+
+  .scr {
+    display: block;
+    margin-top: 50px;
+    background-image: url('../../../assets/screen.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 50px;
+    width: 100%;
+  }
+
+  .screen p {
+    text-align: center;
+  }
+
+  .zal {
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+  .seat {
+    margin: 0 auto;
+    width: 20px;
+    height: 30px;
+    margin-right: 5px;
+    margin-top: 5px;
+    background-color: #3a3a3a;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .seat:hover {
+    background-color: rgb(255, 28, 28);
+  }
+
+  .calendar {
+    display: flex;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: red;
+  }
+
+  .icon {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #fff;
+  }
+
+  .icon img {
+    width: 60%;
+    height: 60%;
+  }
+
+  .text {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .reserve {
+    display: block;
+    margin: 20px auto;
+    width: 150px;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    color: #fff;
+    transition: .2s;
+  }
+
+  .reserve:hover {
+    transition: .2s;
+    transform: scale(1.1);
+  }
+
+  .reserve:active {
+    background-color: rgb(180, 0, 0);
+  }
+
+  .block {
+    background-color: #da3939;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .infoBlock {
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    justify-content: space-between;
+    background-image: url('../../../assets/klim-musalimov-rDMacl1FDjw-unsplash.jpg');
+    background-position: center center;
+    background-size: 100%;
+  }
+
+  .more {
+    width: 20%;
+    margin: 20px auto;
+
+  }
+
+  .poster {
+    display: block;
+    width: 170px;
+    height: 250px;
+    border-radius: 5px;
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+
+  .year {
+    display: block;
+    margin-top: 20px;
+
+  }
+
+  .stlParagraph {
+    font-weight: 100;
+    margin-bottom: 0;
+    font-size: .8rem;
+    color: #ff5757;
+  }
+
+  .marge {
+    color: #fff;
+    font-size: .8rem;
+  }
+
+  .desc {
+    width: 60%;
+    margin-right: 20px;
+    margin-top: 20px;
+    font-size: .9rem;
+    color: #fff;
+  }
+
+  .buy {
+    width: 60%;
+    margin: 40px auto;
+  }
+
+  .scr {
+    display: block;
+    margin-top: 50px;
+    background-image: url('../../../assets/screen.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 50px;
+    width: 100%;
+  }
+
+  .screen p {
+    text-align: center;
+  }
+
+  .zal {
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+  .seat {
+    margin: 0 auto;
+    width: 20px;
+    height: 30px;
+    margin-right: 5px;
+    margin-top: 5px;
+    background-color: #3a3a3a;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .seat:hover {
+    background-color: rgb(255, 28, 28);
+  }
+
+  .calendar {
+    display: flex;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: red;
+  }
+
+  .icon {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #fff;
+  }
+
+  .icon img {
+    width: 60%;
+    height: 60%;
+  }
+
+  .text {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .reserve {
+    display: block;
+    margin: 20px auto;
+    width: 150px;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    color: #fff;
+    transition: .2s;
+  }
+
+  .reserve:hover {
+    transition: .2s;
+    transform: scale(1.1);
+  }
+
+  .reserve:active {
+    background-color: rgb(180, 0, 0);
+  }
+
+  .block {
+    background-color: #da3939;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .infoBlock {
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    justify-content: space-between;
+    background-image: url('../../../assets/klim-musalimov-rDMacl1FDjw-unsplash.jpg');
+    background-position: center center;
+    background-size: 100%;
+  }
+
+  .more {
+    width: 20%;
+    margin: 20px auto;
+
+  }
+
+  .poster {
+    display: block;
+    width: 130px;
+    height: 200px;
+    border-radius: 5px;
+    background-image: url();
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+
+  .year {
+    display: block;
+    margin-top: 20px;
+
+  }
+
+  .stlParagraph {
+    font-weight: 100;
+    margin-bottom: 0;
+    font-size: .8rem;
+    color: #ff5757;
+  }
+
+  .marge {
+    color: #fff;
+    font-size: .8rem;
+  }
+
+  .desc {
+    width: 60%;
+    margin-right: 20px;
+    margin-top: 20px;
+    font-size: .8rem;
+    color: #fff;
+  }
+
+  .buy {
+    width: 60%;
+    margin: 40px auto;
+  }
+
+  .scr {
+    display: block;
+    margin-top: 50px;
+    background-image: url('../../../assets/screen.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 50px;
+    width: 100%;
+  }
+
+  .screen p {
+    text-align: center;
+  }
+
+  .zal {
+    width: 200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+  .seat {
+    margin: 0 auto;
+    width: 20px;
+    height: 30px;
+    margin-right: 5px;
+    margin-top: 5px;
+    background-color: #3a3a3a;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .seat:hover {
+    background-color: rgb(255, 28, 28);
+  }
+
+  .calendar {
+    display: flex;
+    width: 150px;
+    height: 50px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    background-color: red;
+  }
+
+  .icon {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #fff;
+  }
+
+  .icon img {
+    width: 60%;
+    height: 60%;
+  }
+
+  .text {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .reserve {
+    display: block;
+    margin: 20px auto;
+    width: 150px;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    color: #fff;
+    transition: .2s;
+  }
+
+  .reserve:hover {
+    transition: .2s;
+    transform: scale(1.1);
+  }
+
+  .reserve:active {
+    background-color: rgb(180, 0, 0);
+  }
+
+  .block {
+    background-color: #da3939;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .infoBlock {
+    width: 100%;
+    min-height: 600px;
+    justify-content: space-between;
+    background-image: url('../../../assets/klim-musalimov-rDMacl1FDjw-unsplash.jpg');
+    background-position: center center;
+    background-size: 100%;
+  }
+
+  .more {
+    width: 50%;
+    padding-top: 20px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .poster {
+    display: block;
+    margin: 0 auto;
+    width: 130px;
+    height: 200px;
+    border-radius: 5px;
+    background-image: url();
+    background-position: 70% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+
+  .year {
+    display: block;
+    margin-top: 20px;
+
+  }
+
+  .stlParagraph {
+    font-weight: 100;
+    margin-bottom: 0;
+    font-size: .8rem;
+    color: #ff5757;
+  }
+
+  .marge {
+    color: #fff;
+    font-size: .8rem;
+  }
+
+  .desc {
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    font-size: .8rem;
+    color: #fff;
+  }
+
+  .buy {
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+
+  }
+
+  .scr {
+    display: block;
+    margin-top: 50px;
+    background-image: url('../../../assets/screen.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 50px;
+    width: 100%;
+  }
+
+  .screen p {
+    text-align: center;
+  }
+
+  .zal {
+    width: 150px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .seat {
+    margin: 0 auto;
+    width: 20px;
+    height: 30px;
+    margin-right: 5px;
+    margin-top: 5px;
+    background-color: #3a3a3a;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .seat:hover {
+    background-color: rgb(255, 28, 28);
+  }
+
+  .calendar {
+    display: flex;
+    margin: 0 auto;
+    width: 150px;
+    height: 50px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    background-color: red;
+  }
+
+  .icon {
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #fff;
+  }
+
+  .icon img {
+    width: 60%;
+    height: 60%;
+  }
+
+  .text {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .reserve {
+    display: block;
+    margin: 20px auto;
+    width: 150px;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    color: #fff;
+    transition: .2s;
+  }
+
+  .reserve:hover {
+    transition: .2s;
+    transform: scale(1.1);
+  }
+
+  .reserve:active {
+    background-color: rgb(180, 0, 0);
+  }
+
+  .block {
+    background-color: #da3939;
+  }
 }

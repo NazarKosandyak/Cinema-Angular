@@ -59,6 +59,7 @@ export class AuthService {
     this.auth.signInWithEmailAndPassword(email,password)
     .then(userCred=>{
       this.fs.collection('users').doc(userCred.user.uid).ref.get().then(doc=>{
+        
         if(doc.exists){
           const myUser = {
             id:doc.id,

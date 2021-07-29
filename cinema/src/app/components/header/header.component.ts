@@ -1,6 +1,8 @@
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from 'src/app/services/auth/auth.service';
+import { TweenMax, Back, Power1} from 'gsap'
+import gsap from 'gsap/all';
 
 @Component({
   selector: 'app-header',
@@ -20,6 +22,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
     this.loadCurrentUser()
     this.checkCurrentUser()
+    
   }
   loadCurrentUser():void{
     if(localStorage.length > 0){
@@ -50,5 +53,14 @@ export class HeaderComponent implements OnInit {
     this.auth.currentUser$.next('clear')
     this.router.navigateByUrl('/main')
   }
-
+  showModal():void{
+    let getDiv = document.querySelector('.navModal')
+    getDiv.classList.remove('hideBurger')
+    gsap.from(getDiv,{y:100 ,duration:.7,ease:"back.out(1.7)",opacity:0})
+  }
+  closeModal():void{
+    let getDiv = document.querySelector('.navModal')
+    getDiv.classList.toggle('hideBurger')
+  } 
+  
 }

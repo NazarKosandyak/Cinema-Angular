@@ -80,6 +80,12 @@
     .login button img{
         width: 20px;
     }
+    .burger{
+        display: none;
+    }
+    .navModal{
+        display: none;
+    }
     
  }
  @media (min-width: 992px) and (max-width: 1199.98px) { 
@@ -163,6 +169,12 @@
     .login button img{
         width: 20px;
     }
+    .burger{
+        display: none;
+    }
+    .navModal{
+        display: none;
+    }
   }
   @media (min-width: 768px) and (max-width: 991.98px) { 
     header{
@@ -244,6 +256,12 @@
     }
     .login button img{
         width: 20px;
+    }
+    .burger{
+        display: none;
+    }
+    .navModal{
+        display: none;
     }
    }
    @media (min-width: 576px) and (max-width: 767.98px) { 
@@ -329,12 +347,18 @@
     .login button img{
         width: 20px;
     }
+    .burger{
+        display: none;
+    }
+    .navModal{
+        display: none;
+    }
     }
     @media (max-width: 575.98px) { 
         header{
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: space-between;
             width: 100%;
             height: 80px;
             background-color: #221f1f;
@@ -345,7 +369,7 @@
         .logo{
             width: 15%;
             height: 100%;
-            margin-left: 5px;
+            margin-left: 35px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -358,7 +382,7 @@
             width: 75%;
             height: 100%;
             margin-left: 10px;
-            display: flex;
+            display: none;
             align-items: center;
         }
         .nav ul {
@@ -413,5 +437,51 @@
         }
         .login button img{
             width: 20px;
+        }
+        .burger{
+            display: block;
+        }
+        .navModal{
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 20px;
+            left: 50%;
+            transform: translate(-50%,20px);
+            width: 60%;
+            height: 200px;
+            background-color: #444444;
+            z-index: 100;
+            border-radius: 10px;
+            opacity: .8;
+        }
+        .navModal ul{
+            list-style-type: none;
+            margin: 0 ;
+            padding: 0 ;
+        }
+        .navModal ul li{
+          text-align: center;
+          margin-top: 14px;
+        
+        }
+        .navModal ul li a{
+           text-decoration: none;
+           color: #fff;
+          }
+        .navModal ul li a:hover{
+            background-color: red;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .btn-close{
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            
+        }
+        .hideBurger{
+            display: none;
         }
      }

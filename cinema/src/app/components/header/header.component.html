@@ -7,11 +7,19 @@
             <li><a [routerLink]= "['about']" href="">Про нас</a></li>
             <li><a [routerLink]= "['films']" href="">Фільми</a></li>
             <li><a [routerLink]= "['buffet']" href="" >Буфет</a></li>
-            <li><a href="">Щось</a></li>
         </ul>
     </div>
     <div class="login">
         <a href="" [routerLink]="[loginPath]"  [textContent]="textLogin | titlecase"></a>
         <button *ngIf="showLogOut"  (click)="logOut()"><img src="../../../assets/different/logout.png" alt=""></button>
+        <button (click)="showModal()" class="burger"><img src="../../../assets/different/-.png" alt=""></button>
+    </div>
+    <div class="navModal hideBurger">
+        <button (click)="closeModal()"  type="button" class="btn-close btn-close-white" aria-label="Close"></button>
+        <ul>
+            <li><a [routerLink]= "['about']" href="">Про нас</a></li>
+            <li><a [routerLink]= "['films']" href="">Фільми</a></li>
+            <li><a [routerLink]= "['buffet']" href="" >Буфет</a></li>
+        </ul>
     </div>
 </header>

@@ -130,6 +130,7 @@ export class AdminFilmComponent implements OnInit {
   }
   closeEdit():void{
     this.editShow = false
+    document.body.style.background = '#fff'
   }
   newUpload(event):void{
     this.poster = event.target.files[0].name
@@ -147,6 +148,7 @@ export class AdminFilmComponent implements OnInit {
       })
       this.success('Фільм відредаговано')
       this.editShow = false
+      document.body.style.background = '#fff'
     }
     else{
       const editFilm = {
@@ -158,6 +160,7 @@ export class AdminFilmComponent implements OnInit {
       })
       this.success('Фільм відредаговано')
       this.editShow = false
+      document.body.style.background = '#fff'
     }
 
   }

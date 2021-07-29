@@ -9,7 +9,7 @@ import { AuthService } from '../services/auth/auth.service';
 export class OfficeComponent implements OnInit {
   currentUser;
   constructor(
-    private authService:AuthService
+    private authService: AuthService
   ) { }
 
   ngOnInit(): void {
@@ -17,19 +17,19 @@ export class OfficeComponent implements OnInit {
     this.checkUser()
   }
 
-  loadUser():void{
-    if(localStorage.length > 0) {
-      if(localStorage.getItem('user')){
-      this.currentUser = JSON.parse(localStorage.getItem('user'))
+  loadUser(): void {
+    if (localStorage.length > 0) {
+      if (localStorage.getItem('user')) {
+        this.currentUser = JSON.parse(localStorage.getItem('user'))
       }
-      else if(localStorage.getItem('adminCred')){
+      else if (localStorage.getItem('adminCred')) {
       }
     } else {
-     
+
     }
   }
-checkUser():void{
-    this.authService.currentUser$.subscribe(()=>{
+  checkUser(): void {
+    this.authService.currentUser$.subscribe(() => {
       this.loadUser()
     })
   }

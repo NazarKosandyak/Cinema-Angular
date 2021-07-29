@@ -8,6 +8,7 @@ import { IFilm } from '../interfaces/main.interface';
 })
 export class AdminFilmService {
   url:string = 'http://localhost:3000/films'
+  placesUrl = 'http://localhost:3000/places'
   constructor( private http:HttpClient) { }
   get():Observable<IFilm>{
     return this.http.get<IFilm>(this.url)
@@ -23,6 +24,15 @@ export class AdminFilmService {
   }
   delete(id):Observable<IFilm>{
     return this.http.delete<IFilm>(`${this.url}/${id}`)
+  }
+  add(item):Observable<any>{
+    return this.http.post<any>(this.placesUrl,item)
+  }
+  getPlaces():Observable<any>{
+    return this.http.get(this.placesUrl)
+  }
+  deletePlaces(id):Observable<any>{
+    return this.http.delete(`${this.placesUrl}/${id}`)
   }
 }
 

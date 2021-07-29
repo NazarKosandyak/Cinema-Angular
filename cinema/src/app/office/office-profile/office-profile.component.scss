@@ -1,84 +1,285 @@
-.contact{
+.contact {
+  width: 100%;
+  height: 200px;
+  background-color: #2a2727;
+  border-radius: 10px;
+  position: relative;
+}
+
+.info {
+  display: block;
+  position: relative;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.info p {
+  color: #fff;
+  padding-top: 10px;
+
+}
+
+.boxes {
+  width: 100%;
+  display: flex;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.city {
+  width: 30%;
+}
+
+.city p {
+  color: #fff
+}
+
+.city select {
+  width: 100%;
+  outline: none;
+  background-color: #2a2727;
+  color: #fff;
+  border-radius: 5px;
+  border: 2px solid red;
+}
+
+.phone {
+  width: 30%;
+
+}
+
+.phone input {
+  background-color: #2a2727;
+  border: 2px solid red;
+  border-radius: 5px;
+  width: 100%;
+  color: #fff;
+  outline: none;
+}
+
+.email {
+  width: 30%;
+
+}
+
+.email input {
+  background-color: #2a2727;
+  border: 2px solid red;
+  border-radius: 5px;
+  width: 100%;
+  color: #fff;
+  outline: none;
+}
+
+.save {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  background: #ff1c1c;
+  width: 100px;
+  height: 35px;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.save:active {
+  background: #353535;
+}
+
+.personal {
+  width: 100%;
+  height: 230px;
+  background-color: #2a2727;
+  border-radius: 10px;
+  position: relative;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.profile {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+.personal p {
+  color: #fff;
+}
+
+.userName {
+  width: 30%;
+
+}
+
+.userName p {
+  color: #fff;
+}
+
+.userName input {
+  background-color: #2a2727;
+  border: 2px solid red;
+  border-radius: 5px;
+  width: 100%;
+  color: #fff;
+  outline: none;
+}
+
+.surname {
+  width: 30%;
+}
+
+.surname p {
+  color: #fff;
+}
+
+.surname input {
+  background-color: #2a2727;
+  border: 2px solid red;
+  border-radius: 5px;
+  width: 100%;
+  color: #fff;
+  outline: none;
+}
+
+.dateOfBirth {
+  width: 30%;
+}
+
+.dateOfBirth p {
+  color: #fff;
+}
+
+.dateOfBirth input {
+  background-color: #2a2727;
+  border: 2px solid red;
+  border-radius: 5px;
+  width: 100%;
+  color: #fff;
+  outline: none;
+}
+
+.savePersonalInfo {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  background: #ff1c1c;
+  width: 100px;
+  height: 35px;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.savePersonalInfo:active {
+  background: #353535;
+}
+
+@media (max-width: 575.98px) {
+  .contact {
     width: 100%;
     height: 200px;
     background-color: #2a2727;
     border-radius: 10px;
     position: relative;
-}
-.info{
+  }
+
+  .info {
     display: block;
     position: relative;
     width: 95%;
     margin: 0 auto;
-}
-.info p {
+  }
+
+  .info p {
     color: #fff;
     padding-top: 10px;
-    
-}
-.boxes{
+
+  }
+
+  .boxes {
     width: 100%;
     display: flex;
-}
-form{
+  }
+
+  form {
     width: 100%;
     display: flex;
     justify-content: space-around;
-}
-.city{
+  }
+
+  .city {
     width: 30%;
-}
-.city p{
+    font-size: .8rem;
+  }
+
+  .city p {
     color: #fff
-}
-.city select{
+  }
+
+  .city select {
     width: 100%;
     outline: none;
     background-color: #2a2727;
     color: #fff;
     border-radius: 5px;
     border: 2px solid red;
-}
-.phone{
+  }
+
+  .phone {
     width: 30%;
-   
-}
-.phone input{
+    font-size: .8rem;
+  }
+
+  .phone input {
     background-color: #2a2727;
     border: 2px solid red;
     border-radius: 5px;
     width: 100%;
     color: #fff;
     outline: none;
-}
-.email{
+  }
+
+  .email {
     width: 30%;
-   
-}
-.email input{
+    font-size: .8rem;
+
+  }
+
+  .email input {
     background-color: #2a2727;
     border: 2px solid red;
     border-radius: 5px;
     width: 100%;
     color: #fff;
     outline: none;
-}
-.save{
+  }
+
+  .save {
     position: absolute;
     bottom: 10px;
     right: 20px;
-    background:#ff1c1c;
+    background: #ff1c1c;
     width: 100px;
     height: 35px;
     border: none;
     outline: none;
     color: #fff;
     border-radius: 5px;
-}
-.save:active{
-    background:#353535;
-}
-.personal{
+  }
+
+  .save:active {
+    background: #353535;
+  }
+
+  .personal {
     width: 100%;
     height: 230px;
     background-color: #2a2727;
@@ -86,72 +287,89 @@ form{
     position: relative;
     margin-top: 30px;
     padding: 20px;
-}
-.profile{
+  }
+
+  .profile {
     display: flex;
     width: 100%;
     margin: 0 auto;
-   
-}
-.personal p{
+
+  }
+
+  .personal p {
     color: #fff;
-}
-.userName{
+    font-size: .8rem;
+  }
+
+  .userName {
     width: 30%;
 
-}
-.userName p {
-    color: #fff;
-}
-.userName input{
-    background-color: #2a2727;
-    border: 2px solid red;
-    border-radius: 5px;
-    width: 100%;
-    color: #fff;
-    outline: none;
-}
-.surname {
-    width: 30%;
-}
-.surname p {
-    color: #fff;
-}
-.surname input{
-    background-color: #2a2727;
-    border: 2px solid red;
-    border-radius: 5px;
-    width: 100%;
-    color: #fff;
-    outline: none;
-}
+  }
 
-.dateOfBirth {
-    width: 30%;
-}
-.dateOfBirth p {
+  .userName p {
     color: #fff;
-}
-.dateOfBirth input{
+    font-size: .7rem;
+  }
+
+  .userName input {
     background-color: #2a2727;
     border: 2px solid red;
     border-radius: 5px;
     width: 100%;
     color: #fff;
     outline: none;
-}
-.savePersonalInfo{
+  }
+
+  .surname {
+    width: 30%;
+  }
+
+  .surname p {
+    color: #fff;
+    font-size: .7rem;
+  }
+
+  .surname input {
+    background-color: #2a2727;
+    border: 2px solid red;
+    border-radius: 5px;
+    width: 100%;
+    color: #fff;
+    outline: none;
+  }
+
+  .dateOfBirth {
+    width: 30%;
+  }
+
+  .dateOfBirth p {
+    color: #fff;
+    font-size: .7rem;
+  }
+
+  .dateOfBirth input {
+    background-color: #2a2727;
+    border: 2px solid red;
+    border-radius: 5px;
+    width: 100%;
+    color: #fff;
+    outline: none;
+  }
+
+  .savePersonalInfo {
     position: absolute;
     bottom: 10px;
     right: 20px;
-    background:#ff1c1c;
+    background: #ff1c1c;
     width: 100px;
     height: 35px;
     border: none;
     outline: none;
     color: #fff;
     border-radius: 5px;
-}
-.savePersonalInfo:active{
-    background:#353535;
+  }
+
+  .savePersonalInfo:active {
+    background: #353535;
+  }
 }

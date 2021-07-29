@@ -50,11 +50,11 @@
         <tbody>
           <tr *ngFor="let item of dataFilm">
             <th class="col-1">{{item.id}}</th>
-            <td class="col-7">{{item.title}}</td>
+            <td class="col-5">{{item.title}}</td>
             <td class="col-4">
               <img class="poster" [src]="item.poster" alt="" width="100px">
             </td>
-            <td style="min-width: 200px;">
+            <td class="btnGroup col-2">
               <button type="button" (click)="edit(item)" class="btn btn-warning mr-2 editStl">Edit</button>
               <button  type="button" (click)="deleteFilm(item.id)" class="btn btn-danger">Delete</button>
             </td>
