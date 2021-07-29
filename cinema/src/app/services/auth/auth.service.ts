@@ -27,8 +27,8 @@ export class AuthService {
     private http:HttpClient
 
   ) { 
-    this.urlMain = 'http://localhost:3000/main'
-    this.urlFilm = 'http://localhost:3000/films'
+    this.urlMain = 'https://ownapicinema.herokuapp.com/main'
+    this.urlFilm = 'https://ownapicinema.herokuapp.com/films'
   }
   singUp(name,email,password):void{
     this.auth.createUserWithEmailAndPassword(email,password)

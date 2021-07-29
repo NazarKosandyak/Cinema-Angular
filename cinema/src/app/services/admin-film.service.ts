@@ -7,8 +7,8 @@ import { IFilm } from '../interfaces/main.interface';
   providedIn: 'root'
 })
 export class AdminFilmService {
-  url:string = 'http://localhost:3000/films'
-  placesUrl = 'http://localhost:3000/places'
+  url:string = 'https://ownapicinema.herokuapp.com/films'
+  placesUrl = 'https://ownapicinema.herokuapp.com/places'
   constructor( private http:HttpClient) { }
   get():Observable<IFilm>{
     return this.http.get<IFilm>(this.url)

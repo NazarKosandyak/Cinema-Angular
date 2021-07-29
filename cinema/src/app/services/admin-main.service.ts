@@ -9,7 +9,7 @@ import { IMain } from '../interfaces/main.interface';
 export class AdminMainService {
   url:string
   constructor(private http:HttpClient) {
-    this.url = 'http://localhost:3000/main'
+    this.url = 'https://ownapicinema.herokuapp.com/main'
    }
    get():Observable<Array<IMain>>{
     return this.http.get<Array<IMain>>(this.url)
